@@ -1,0 +1,8 @@
+<h3>Recommended Places</h3>
+<h5>where the locals hang<h5>
+
+<ul>
+<% @rec_places.groups.first.items.each do |item| %>
+  <li><%= image_tag(item.venue.categories.first.icon) %>---<%= item.venue.name %></li>
+<% end %>
+</ul>

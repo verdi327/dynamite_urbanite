@@ -1,0 +1,9 @@
+<h3> The Weather </h3>
+<h5> hello small talk </h5>
+<ul>
+  <li><%= @current_weather.condition %></li>
+  <li><%= @current_weather.temperature %></li>
+  <li><%= @current_weather.humidity %></li>
+  <li><%= @current_weather.wind_conditon %></li>
+  <li><%= image_tag('http://' + @current_weather.icon) %></li>
+</ul>

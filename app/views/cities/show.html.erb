@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<ul>
+  <li><h1><%= @city.full_name %></h1></li>
+  <li><%= image_tag(@city.display_photo) %></li>
+</ul>
+
+<%= render 'weather' %>
+<%= render 'economy' %>
+<%= render 'people' %>
+<%= render 'recommended_places' %>
+
+

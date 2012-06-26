@@ -1,0 +1,23 @@
+<%= form_tag cities_path, method: :get do %>
+  <p>
+    <%= text_field_tag :query, params[:query] %>
+    <%= submit_tag "Search", name: nil %>
+  </p>
+<% end %>
+
+<h1>Listing cities</h1>
+
+<table>
+  <tr>
+    <th></th>
+  </tr>
+<% if @cities.count == 0 %>
+    <h3> So sorry, we were unable to find that city! </h3>
+<% else %>
+    <% @cities.each do |city| %>
+      <tr>
+        <td><%= link_to(city.full_name, city) %></td>
+      </tr>
+    <% end %>
+<% end %>
+</table>
