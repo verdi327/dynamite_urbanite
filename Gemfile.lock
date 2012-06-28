@@ -16,6 +16,13 @@ GIT
       nokogiri
 
 GIT
+  remote: git://github.com/verdi327/walkscore.git
+  revision: 7a9c98a53faaa8bbd55b166c08744543c8f3ce35
+  specs:
+    walkscore (0.0.1)
+      faraday
+
+GIT
   remote: git://github.com/verdi327/zillow_api.git
   revision: 2cc6848d886dac151dd4a4ace12b16fa0d9842a6
   specs:
@@ -168,4 +175,5 @@ DEPENDENCIES
   sqlite3
   tire
   uglifier (>= 1.0.3)
+  walkscore!
   zillow_demographics!

@@ -13,6 +13,7 @@ gem 'foursquare2'
 gem 'most_common_industry'
 gem 'instagram', github: 'verdi327/instagram'
 gem 'livingsocial', github: 'verdi327/livingsocial_scraper'
+gem 'walkscore', github: 'verdi327/walkscore'
 
 
 # Gems used only for assets and not required

@@ -13,6 +13,7 @@ class CitiesController < ApplicationController
     # @rec_places = client.explore_venues(ll: "#{@city.latitude},#{@city.longitude}", radius: '8000')
     # @instagram_photos = Instagram.media_search(@city.short_lat, @city.short_lng, {count: 18})
     @deals = LivingSocialApi::DailyDealBuilder.build_for_city(@city.name)
+    @walkscore = WalkscoreApi::Walkscore.find({lat: @city.latitude, long: @city.longitude})
   end
 
   def new
