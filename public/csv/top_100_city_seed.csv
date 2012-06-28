@@ -1,47 +1,47 @@
 name,state,population,latitude,longitude,display_photo
-New York,New York,8175133,40.7143528,-74.0059731,upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Manhattan3_amk.jpg/320px-Manhattan3_amk.jpg
-Los Angeles,California,3792621,34.0522342,-118.2436849,upload.wikimedia.org/wikipedia/commons/thumb/5/57/LA_Skyline_Mountains2.jpg/320px-LA_Skyline_Mountains2.jpg
+New-York,New-York,8175133,40.7143528,-74.0059731,upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Manhattan3_amk.jpg/320px-Manhattan3_amk.jpg
+Los-Angeles,California,3792621,34.0522342,-118.2436849,upload.wikimedia.org/wikipedia/commons/thumb/5/57/LA_Skyline_Mountains2.jpg/320px-LA_Skyline_Mountains2.jpg
 Chicago,Illinois,2695598,41.8781136,-87.6297982,upload.wikimedia.org/wikipedia/commons/thumb/0/0b/ChicagovanafSearsTower.jpg/320px-ChicagovanafSearsTower.jpg
 Houston,Texas,2099451,29.7601927,-95.3693896,upload.wikimedia.org/wikipedia/commons/thumb/4/44/Panoramic_Houston_skyline.jpg/320px-Panoramic_Houston_skyline.jpg
 Philadelphia,Pennsylvania,1526006,39.952335,-75.163789,upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Philly_skyline.jpg/320px-Philly_skyline.jpg
 Phoenix,Arizona,1445632,33.4483771,-112.0740373,upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Downtown_Phoenix_Aerial_Looking_Northeast.jpg/320px-Downtown_Phoenix_Aerial_Looking_Northeast.jpg
-San Antonio,Texas,1327407,29.4241219,-98.4936282,upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Downtown_San_Antonio_View.JPG/320px-Downtown_San_Antonio_View.JPG
-San Diego,California,1307402,32.7153292,-117.1572551,upload.wikimedia.org/wikipedia/commons/thumb/c/c5/San_Diego_Skyline_during_winter_of_January_2011.jpg/320px-San_Diego_Skyline_during_winter_of_January_2011.jpg
+San-Antonio,Texas,1327407,29.4241219,-98.4936282,upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Downtown_San_Antonio_View.JPG/320px-Downtown_San_Antonio_View.JPG
+San-Diego,California,1307402,32.7153292,-117.1572551,upload.wikimedia.org/wikipedia/commons/thumb/c/c5/San_Diego_Skyline_during_winter_of_January_2011.jpg/320px-San_Diego_Skyline_during_winter_of_January_2011.jpg
 Dallas,Texas,1197816,32.802955,-96.769923,upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Xvisionx_Dallas_Stemmons.jpg/320px-Xvisionx_Dallas_Stemmons.jpg
-San Jose,California,945942,37.3393857,-121.8949555,upload.wikimedia.org/wikipedia/en/thumb/1/1c/Downtown_San_Jose.PNG/320px-Downtown_San_Jose.PNG
+San-Jose,California,945942,37.3393857,-121.8949555,upload.wikimedia.org/wikipedia/en/thumb/1/1c/Downtown_San_Jose.PNG/320px-Downtown_San_Jose.PNG
 Jacksonville,Florida,821784,30.3321838,-81.655651,upload.wikimedia.org/wikipedia/commons/thumb/a/a2/NightJXFL11.jpg/320px-NightJXFL11.jpg
 Indianapolis,Indiana,820445,39.7685155,-86.1580736,upload.wikimedia.org/wikipedia/commons/thumb/1/16/Downtown_indy_from_parking_garage_zoom.JPG/320px-Downtown_indy_from_parking_garage_zoom.JPG
-San Francisco,California,805235,37.7749295,-122.4194155,upload.wikimedia.org/wikipedia/commons/thumb/0/07/FinancialNorth.jpg/320px-FinancialNorth.jpg
+San-Francisco,California,805235,37.7749295,-122.4194155,upload.wikimedia.org/wikipedia/commons/thumb/0/07/FinancialNorth.jpg/320px-FinancialNorth.jpg
 Austin,Texas,790390,30.267153,-97.7430608,upload.wikimedia.org/wikipedia/commons/thumb/0/06/AustinSkylineLouNeffPoint-2010-03-29-b.JPG/320px-AustinSkylineLouNeffPoint-2010-03-29-b.JPG
 Columbus,Ohio,787033,39.9611755,-82.9987942,upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Columbus-ohio-skyline-panorama.jpg/320px-Columbus-ohio-skyline-panorama.jpg
-Fort Worth,Texas,741206,32.725409,-97.3208496,upload.wikimedia.org/wikipedia/commons/thumb/d/db/FortWorthTexasSkylineW.jpg/320px-FortWorthTexasSkylineW.jpg
-Charlotte,North Carolina,731424,35.2270869,-80.8431267,upload.wikimedia.org/wikipedia/commons/thumb/a/a3/CharlotteSkyline2008123456789.jpg/320px-CharlotteSkyline2008123456789.jpg
+Fort-Worth,Texas,741206,32.725409,-97.3208496,upload.wikimedia.org/wikipedia/commons/thumb/d/db/FortWorthTexasSkylineW.jpg/320px-FortWorthTexasSkylineW.jpg
+Charlotte,North-Carolina,731424,35.2270869,-80.8431267,upload.wikimedia.org/wikipedia/commons/thumb/a/a3/CharlotteSkyline2008123456789.jpg/320px-CharlotteSkyline2008123456789.jpg
 Detroit,Michigan,713777,42.331427,-83.0457538,upload.wikimedia.org/wikipedia/commons/thumb/a/a0/DetroitSkyline.jpg/320px-DetroitSkyline.jpg
-El Paso,Texas,649121,31.7587198,-106.4869314,upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Cityscape_of_El_Paso_at_Dusk.jpg/320px-Cityscape_of_El_Paso_at_Dusk.jpg
+El-Paso,Texas,649121,31.7587198,-106.4869314,upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Cityscape_of_El_Paso_at_Dusk.jpg/320px-Cityscape_of_El_Paso_at_Dusk.jpg
 Memphis,Tennessee,646889,35.1495343,-90.0489801,upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Memphis_skyline_from_the_air.jpg/320px-Memphis_skyline_from_the_air.jpg
 Baltimore,Maryland,620961,39.2903848,-76.6121893,upload.wikimedia.org/wikipedia/commons/thumb/4/48/Bmore_skyline_inner_harbor.jpg/320px-Bmore_skyline_inner_harbor.jpg
 Boston,Massachusetts,617594,42.3584308,-71.0597732,upload.wikimedia.org/wikipedia/commons/thumb/6/63/DowntownBoston.jpg/320px-DowntownBoston.jpg
 Seattle,Washington,608660,47.6062095,-122.3320708,upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Seattle_7.jpg/320px-Seattle_7.jpg
-Washington,District of Columbia,601723,38.8951118,-77.0363658,upload.wikimedia.org/wikipedia/commons/thumb/1/13/WashMonument_WhiteHouse.jpg/320px-WashMonument_WhiteHouse.jpg
-Nashville ,Tennessee,601222,36.1666667,-86.7833333,upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Nashvilleskyline23.jpg/320px-Nashvilleskyline23.jpg
+Washington,District-of-Columbia,601723,38.8951118,-77.0363658,upload.wikimedia.org/wikipedia/commons/thumb/1/13/WashMonument_WhiteHouse.jpg/320px-WashMonument_WhiteHouse.jpg
+Nashville-Davidson,Tennessee,601222,36.1666667,-86.7833333,upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Nashvilleskyline23.jpg/320px-Nashvilleskyline23.jpg
 Denver,Colorado,600158,39.737567,-104.9847179,upload.wikimedia.org/wikipedia/commons/thumb/a/a9/2006-03-26_Denver_Skyline_I-25_Speer.jpg/320px-2006-03-26_Denver_Skyline_I-25_Speer.jpg
 Louisville,Kentucky,597337,38.2526647,-85.7584557,upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Louisville_skyline_night.jpg/320px-Louisville_skyline_night.jpg
 Milwaukee,Wisconsin,594833,43.0389025,-87.9064736,upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Milwaukee_skyline.jpg/320px-Milwaukee_skyline.jpg
 Portland,Oregon,583776,45.5234515,-122.6762071,upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Portland_and_Mt_Hood.jpg/320px-Portland_and_Mt_Hood.jpg
-Las Vegas,Nevada,583756,36.114646,-115.172816,upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Las_Vegas_from_Frenchman_3.jpg/320px-Las_Vegas_from_Frenchman_3.jpg
-Oklahoma City,Oklahoma,579999,35.4675602,-97.5164276,upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Oklahoma_city_downtown.JPG/320px-Oklahoma_city_downtown.JPG
-Albuquerque,New Mexico,545852,35.0844909,-106.6511367,upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Alb_Skyline.png/320px-Alb_Skyline.png
+Las-Vegas,Nevada,583756,36.114646,-115.172816,upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Las_Vegas_from_Frenchman_3.jpg/320px-Las_Vegas_from_Frenchman_3.jpg
+Oklahoma-City,Oklahoma,579999,35.4675602,-97.5164276,upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Oklahoma_city_downtown.JPG/320px-Oklahoma_city_downtown.JPG
+Albuquerque,New-Mexico,545852,35.0844909,-106.6511367,upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Alb_Skyline.png/320px-Alb_Skyline.png
 Tucson,Arizona,520116,32.2217429,-110.926479,upload.wikimedia.org/wikipedia/commons/thumb/8/85/CatalinasAndTusconAZ.JPG/320px-CatalinasAndTusconAZ.JPG
 Fresno,California,494665,36.7468422,-119.7725868,upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Downtownfresnoskyline.jpg/320px-Downtownfresnoskyline.jpg
 Sacramento,California,466488,38.5815719,-121.4943996,upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Sacramento_Riverfront.jpg/320px-Sacramento_Riverfront.jpg
-Long Beach,California,462257,33.768321,-118.1956168,upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Long_Beach%2C_CA_at_night.jpg/320px-Long_Beach%2C_CA_at_night.jpg
-Kansas City,Missouri,459787,39.0997265,-94.5785667,upload.wikimedia.org/wikipedia/commons/thumb/3/37/Kansas_City_MO_Skyline_14July2008v.jpg/320px-Kansas_City_MO_Skyline_14July2008v.jpg
+Long-Beach,California,462257,33.768321,-118.1956168,upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Long_Beach%2C_CA_at_night.jpg/320px-Long_Beach%2C_CA_at_night.jpg
+Kansas-City,Missouri,459787,39.0997265,-94.5785667,upload.wikimedia.org/wikipedia/commons/thumb/3/37/Kansas_City_MO_Skyline_14July2008v.jpg/320px-Kansas_City_MO_Skyline_14July2008v.jpg
 Mesa,Arizona,439041,33.4151843,-111.8314724,upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Downtown_Mesa_Arizona.jpg/320px-Downtown_Mesa_Arizona.jpg
-Virginia Beach,Virginia,437994,36.8529263,-75.977985,upload.wikimedia.org/wikipedia/commons/thumb/a/a3/VA_Beach_Town_Center.jpg/320px-VA_Beach_Town_Center.jpg
+Virginia-Beach,Virginia,437994,36.8529263,-75.977985,upload.wikimedia.org/wikipedia/commons/thumb/a/a3/VA_Beach_Town_Center.jpg/320px-VA_Beach_Town_Center.jpg
 Atlanta,Georgia,420003,33.7489954,-84.3879824,upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Atlanta_Skyline_from_Buckhead.jpg/320px-Atlanta_Skyline_from_Buckhead.jpg
-Colorado Springs,Colorado,416427,38.8338816,-104.8213634,upload.wikimedia.org/wikipedia/commons/thumb/4/45/CC_COSPRINGS.jpg/320px-CC_COSPRINGS.jpg
+Colorado-Springs,Colorado,416427,38.8338816,-104.8213634,upload.wikimedia.org/wikipedia/commons/thumb/4/45/CC_COSPRINGS.jpg/320px-CC_COSPRINGS.jpg
 Omaha,Nebraska,408958,41.2523634,-95.9979883,upload.wikimedia.org/wikipedia/commons/thumb/2/24/Omaha%2C_Nebraska%2C_USA_2008.jpg/320px-Omaha%2C_Nebraska%2C_USA_2008.jpg
-Raleigh,North Carolina,403892,35.772096,-78.6386145,upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Downtown-Raleigh-from-Western-Boulevard-Overpass-20081012.jpeg/320px-Downtown-Raleigh-from-Western-Boulevard-Overpass-20081012.jpeg
+Raleigh,North-Carolina,403892,35.772096,-78.6386145,upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Downtown-Raleigh-from-Western-Boulevard-Overpass-20081012.jpeg/320px-Downtown-Raleigh-from-Western-Boulevard-Overpass-20081012.jpeg
 Miami,Florida,399457,25.7889689,-80.2264393,upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Downtown_Miami_skyline_May_2011.jpg/320px-Downtown_Miami_skyline_May_2011.jpg
 Cleveland,Ohio,396815,41.4994954,-81.6954088,upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Cleveland_From_The_Lake.jpg/320px-Cleveland_From_The_Lake.jpg
 Tulsa,Oklahoma,391906,36.1539816,-95.992775,upload.wikimedia.org/wikipedia/commons/thumb/4/47/Tulsa%2C_Oklahoma.jpg/320px-Tulsa%2C_Oklahoma.jpg
@@ -49,53 +49,53 @@ Oakland,California,390724,37.8043637,-122.2711137,upload.wikimedia.org/wikipedia
 Minneapolis,Minnesota,382578,44.983334,-93.26667,upload.wikimedia.org/wikipedia/commons/thumb/e/ea/MinneapolisSkyline.jpg/320px-MinneapolisSkyline.jpg
 Wichita,Kansas,382368,37.6888889,-97.3361111,upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Wichita-ks.jpg/320px-Wichita-ks.jpg
 Arlington,Texas,365438,32.735687,-97.1080656,upload.wikimedia.org/wikipedia/commons/thumb/7/77/Cowboys-Stadium-Night.jpg/320px-Cowboys-Stadium-Night.jpg
-Bakersfield,California,347483,35.3732921,-119.0187125,http://pics2.city-data.com/picthumb/thumbv23165.jpg
-New Orleans,Louisiana,343829,29.9510658,-90.0715323,http://pics2.city-data.com/picthumbc/thumbc47243.jpg
-Honolulu ,Hawaii,337256,21.3069444,-157.8583333,http://pics2.city-data.com/picthumbc/thumbc44338.jpg
-Anaheim,California,336265,33.8352932,-117.9145036,http://pics2.city-data.com/picthumbc/thumbc47387.jpg
-Tampa,Florida,335709,27.950575,-82.4571776,http://pics2.city-data.com/picthumb/thumbv9994.jpg
-Aurora,Colorado,325078,39.7294319,-104.8319195,http://pics2.city-data.com/picthumbc/thumbc999.jpg
-Santa Ana,California,324528,33.7455731,-117.8678338,http://pics2.city-data.com/picthumbc/thumbc18617.jpg
-St. Louis,Missouri,319294,38.6270025,-90.1994042,http://pics2.city-data.com/picthumb/thumbv21508.jpg
-Pittsburgh,Pennsylvania,305704,40.4406248,-79.9958864,http://pics2.city-data.com/picthumbc/thumbc47600.jpg
-Corpus Christi,Texas,305215,27.8005828,-97.396381,http://pics2.city-data.com/picthumb/thumbv29668.jpg
-Riverside,California,303871,33.9533487,-117.3961564,http://pics2.city-data.com/picthumbc/thumbc49373.jpg
-Cincinnati,Ohio,296943,39.1031182,-84.5120196,http://pics2.city-data.com/picthumbc/thumbc46653.jpg
-Lexington,Kentucky,295803,38.0405837,-84.5037164,http://pics2.city-data.com/picthumb/thumbv32695.jpg
-Anchorage,Alaska,291826,61.2180556,-149.9002778,http://pics2.city-data.com/picthumb/thumbv213.jpg
-Stockton,California,291707,37.9577016,-121.2907796,http://pics2.city-data.com/picthumbc/thumbc17963.jpg
-Toledo,Ohio,287208,41.6639383,-83.555212,http://pics2.city-data.com/picthumb/thumbv14572.jpg
-St. Paul,Minnesota,285068,44.9537029,-93.0899578,http://pics2.city-data.com/picthumb/thumbv8726.jpg
-Newark,New Jersey,277140,40.735657,-74.1723667,http://pics2.city-data.com/picthumbc/thumbc796.jpg
-Greensboro,North Carolina,269666,36.0726354,-79.7919754,http://pics2.city-data.com/picthumbc/thumbc21721.jpg
-Buffalo,New York,261310,42.8864468,-78.8783689,http://pics2.city-data.com/picthumbc/thumbc37356.jpg
-Plano,Texas,259841,33.0198431,-96.6988856,http://pics2.city-data.com/picthumb/thumbv18035.jpg
-Lincoln,Nebraska,258379,40.806862,-96.681679,http://pics2.city-data.com/picthumbc/thumbc40475.jpg
-Henderson,Nevada,257729,36.0395247,-114.9817213,http://pics2.city-data.com/picthumb/thumbv20628.jpg
-Fort Wayne,Indiana,253691,41.079273,-85.1393513,http://pics2.city-data.com/picthumbc/thumbc26114.jpg
-Jersey City,New Jersey,247597,40.7281575,-74.0776417,http://pics2.city-data.com/picthumbc/thumbc49374.jpg
-St. Petersburg,Florida,244769,27.7730556,-82.64,http://pics2.city-data.com/picthumbc/thumbc18206.jpg
-Chula Vista,California,243916,32.6400541,-117.0841955,http://pics2.city-data.com/picthumbc/thumbc46744.jpg
-Norfolk,Virginia,242803,36.8507689,-76.2858726,http://pics2.city-data.com/picthumbc/thumbc33923.jpg
-Orlando,Florida,238300,28.5383355,-81.3792365,http://pics2.city-data.com/picthumb/thumbv29314.jpg
-Chandler,Arizona,236123,33.3061605,-111.8412502,http://pics2.city-data.com/picthumbc/thumbc19304.jpg
-Laredo,Texas,236091,27.506407,-99.5075421,http://pics2.city-data.com/picthumb/thumbv11070.jpg
-Madison,Wisconsin,233209,43.0730517,-89.4012302,http://pics2.city-data.com/picthumbc/thumbc33284.jpg
-Winston-Salem,North Carolina,229617,36.0998596,-80.244216,http://pics2.city-data.com/picthumbc/thumbc41650.jpg
-Lubbock,Texas,229573,33.5778631,-101.8551665,http://pics2.city-data.com/picthumb/thumbv17102.jpg
-Baton Rouge,Louisiana,229493,30.4582829,-91.1403196,http://pics2.city-data.com/picthumb/thumbv32971.jpg
-Durham,North Carolina,228330,35.9940329,-78.898619,http://pics2.city-data.com/picthumb/thumbv24630.jpg
-Garland,Texas,226876,32.912624,-96.6388833,http://pics3.city-data.com/images/pcr.png
-Glendale,Arizona,226721,33.5386523,-112.1859866,http://pics2.city-data.com/picthumb/thumbv25899.jpg
-Reno,Nevada,225221,39.5296329,-119.8138027,http://pics2.city-data.com/picthumb/thumbv29850.jpg
-Hialeah,Florida,224669,25.8575963,-80.2781057,http://pics2.city-data.com/picthumbc/thumbc29730.jpg
-Chesapeake,Virginia,222209,36.7682088,-76.2874927,http://pics2.city-data.com/picthumbc/thumbc74854.jpg
-Scottsdale,Arizona,217385,33.4941704,-111.9260519,http://pics2.city-data.com/picthumbc/thumbc43165.jpg
-North Las Vegas,Nevada,216961,36.1988592,-115.1175013,http://pics2.city-data.com/picthumb/thumbv31374.jpg
-Irving,Texas,216290,32.8140177,-96.9488945,http://pics2.city-data.com/picthumb/thumbv29569.jpg
-Fremont,California,214089,37.5482697,-121.9885719,http://pics2.city-data.com/picthumbc/thumbc27548.jpg
-Irvine,California,212375,33.6839473,-117.7946942,http://pics2.city-data.com/picthumbc/thumbc5428.jpg
-Birmingham,Alabama,212237,33.5206608,-86.80249,http://pics2.city-data.com/picthumb/thumbv32509.jpg
-Rochester,New York,210565,43.16103,-77.6109219,http://pics2.city-data.com/picthumbc/thumbc38191.jpg
-San Bernardino,California,209924,34.1083449,-117.2897652,http://pics2.city-data.com/picthumb/thumbv31381.jpg
-Spokane,Washington,208916,47.6587802,-117.4260466,http://pics2.city-data.com/picthumbc/thumbc23605.jpg
+Bakersfield,California,347483,35.3732921,-119.0187125,pics2.city-data.com/picthumb/thumbv23165.jpg
+New-Orleans,Louisiana,343829,29.9510658,-90.0715323,pics2.city-data.com/picthumbc/thumbc47243.jpg
+Honolulu,Hawaii,337256,21.3069444,-157.8583333,pics2.city-data.com/picthumbc/thumbc44338.jpg
+Anaheim,California,336265,33.8352932,-117.9145036,pics2.city-data.com/picthumbc/thumbc47387.jpg
+Tampa,Florida,335709,27.950575,-82.4571776,pics2.city-data.com/picthumb/thumbv9994.jpg
+Aurora,Colorado,325078,39.7294319,-104.8319195,pics2.city-data.com/picthumbc/thumbc999.jpg
+Santa-Ana,California,324528,33.7455731,-117.8678338,pics2.city-data.com/picthumbc/thumbc18617.jpg
+St.-Louis,Missouri,319294,38.6270025,-90.1994042,pics2.city-data.com/picthumb/thumbv21508.jpg
+Pittsburgh,Pennsylvania,305704,40.4406248,-79.9958864,pics2.city-data.com/picthumbc/thumbc47600.jpg
+Corpus-Christi,Texas,305215,27.8005828,-97.396381,pics2.city-data.com/picthumb/thumbv29668.jpg
+Riverside,California,303871,33.9533487,-117.3961564,pics2.city-data.com/picthumbc/thumbc49373.jpg
+Cincinnati,Ohio,296943,39.1031182,-84.5120196,pics2.city-data.com/picthumbc/thumbc46653.jpg
+Lexington,Kentucky,295803,38.0405837,-84.5037164,pics2.city-data.com/picthumb/thumbv32695.jpg
+Anchorage,Alaska,291826,61.2180556,-149.9002778,pics2.city-data.com/picthumb/thumbv213.jpg
+Stockton,California,291707,37.9577016,-121.2907796,pics2.city-data.com/picthumbc/thumbc17963.jpg
+Toledo,Ohio,287208,41.6639383,-83.555212,pics2.city-data.com/picthumb/thumbv14572.jpg
+St.-Paul,Minnesota,285068,44.9537029,-93.0899578,pics2.city-data.com/picthumb/thumbv8726.jpg
+Newark,New-Jersey,277140,40.735657,-74.1723667,pics2.city-data.com/picthumbc/thumbc796.jpg
+Greensboro,North-Carolina,269666,36.0726354,-79.7919754,pics2.city-data.com/picthumbc/thumbc21721.jpg
+Buffalo,New-York,261310,42.8864468,-78.8783689,pics2.city-data.com/picthumbc/thumbc37356.jpg
+Plano,Texas,259841,33.0198431,-96.6988856,pics2.city-data.com/picthumb/thumbv18035.jpg
+Lincoln,Nebraska,258379,40.806862,-96.681679,pics2.city-data.com/picthumbc/thumbc40475.jpg
+Henderson,Nevada,257729,36.0395247,-114.9817213,pics2.city-data.com/picthumb/thumbv20628.jpg
+Fort-Wayne,Indiana,253691,41.079273,-85.1393513,pics2.city-data.com/picthumbc/thumbc26114.jpg
+Jersey-City,New-Jersey,247597,40.7281575,-74.0776417,pics2.city-data.com/picthumbc/thumbc49374.jpg
+St.-Petersburg,Florida,244769,27.7730556,-82.64,pics2.city-data.com/picthumbc/thumbc18206.jpg
+Chula-Vista,California,243916,32.6400541,-117.0841955,pics2.city-data.com/picthumbc/thumbc46744.jpg
+Norfolk,Virginia,242803,36.8507689,-76.2858726,pics2.city-data.com/picthumbc/thumbc33923.jpg
+Orlando,Florida,238300,28.5383355,-81.3792365,pics2.city-data.com/picthumb/thumbv29314.jpg
+Chandler,Arizona,236123,33.3061605,-111.8412502,pics2.city-data.com/picthumbc/thumbc19304.jpg
+Laredo,Texas,236091,27.506407,-99.5075421,pics2.city-data.com/picthumb/thumbv11070.jpg
+Madison,Wisconsin,233209,43.0730517,-89.4012302,pics2.city-data.com/picthumbc/thumbc33284.jpg
+Winston-Salem,North-Carolina,229617,36.0998596,-80.244216,pics2.city-data.com/picthumbc/thumbc41650.jpg
+Lubbock,Texas,229573,33.5778631,-101.8551665,pics2.city-data.com/picthumb/thumbv17102.jpg
+Baton-Rouge,Louisiana,229493,30.4582829,-91.1403196,pics2.city-data.com/picthumb/thumbv32971.jpg
+Durham,North-Carolina,228330,35.9940329,-78.898619,pics2.city-data.com/picthumb/thumbv24630.jpg
+Garland,Texas,226876,32.912624,-96.6388833,pics3.city-data.com/images/pcr.png
+Glendale,Arizona,226721,33.5386523,-112.1859866,pics2.city-data.com/picthumb/thumbv25899.jpg
+Reno,Nevada,225221,39.5296329,-119.8138027,pics2.city-data.com/picthumb/thumbv29850.jpg
+Hialeah,Florida,224669,25.8575963,-80.2781057,pics2.city-data.com/picthumbc/thumbc29730.jpg
+Chesapeake,Virginia,222209,36.7682088,-76.2874927,pics2.city-data.com/picthumbc/thumbc74854.jpg
+Scottsdale,Arizona,217385,33.4941704,-111.9260519,pics2.city-data.com/picthumbc/thumbc43165.jpg
+North-Las-Vegas,Nevada,216961,36.1988592,-115.1175013,pics2.city-data.com/picthumb/thumbv31374.jpg
+Irving,Texas,216290,32.8140177,-96.9488945,pics2.city-data.com/picthumb/thumbv29569.jpg
+Fremont,California,214089,37.5482697,-121.9885719,pics2.city-data.com/picthumbc/thumbc27548.jpg
+Irvine,California,212375,33.6839473,-117.7946942,pics2.city-data.com/picthumbc/thumbc5428.jpg
+Birmingham,Alabama,212237,33.5206608,-86.80249,pics2.city-data.com/picthumb/thumbv32509.jpg
+Rochester,New-York,210565,43.16103,-77.6109219,pics2.city-data.com/picthumbc/thumbc38191.jpg
+San-Bernardino,California,209924,34.1083449,-117.2897652,pics2.city-data.com/picthumb/thumbv31381.jpg
+Spokane,Washington,208916,47.6587802,-117.4260466,pics2.city-data.com/picthumbc/thumbc23605.jpg

@@ -1,0 +1,8 @@
+<h3>Photos</h3>
+<h5>a picture says a thousand words</h5>
+
+<ul>
+<% @instagram_photos.data.each do |response| %>
+  <li><%= image_tag(response.images.standard_resolution.url) %></li>
+<% end %>
+</ul>

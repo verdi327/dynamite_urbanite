@@ -1,8 +1,16 @@
 <h3>The Economy</h3>
 <h5>how they make $$$</h5>
+
+<p> Most Common Industries </p>
 <ul>
-  <li>Average Communte Time: <%= format_as_minutes(@people_info.average_commute_time) %><li>
-  <li>Average Home Value: $ <%= number_with_delimiter(@people_info.home_value, delimiter: ', ') %><li>
+<% @industry.most_common.each do |category| %>
+  <li><%= category %></li>
+<% end %>
+</ul>
+
+<ul>
+  <li>Average Communte Time: <%= format_as_minutes(@people_info.average_commute_time) %> | <%= format_as_minutes(@national_info.average_commute_time) %> (nat'l avg)<li>
+  <li>Average Home Value: $ <%= number_with_delimiter(@people_info.home_value, delimiter: ',') %> | <%= number_with_delimiter(@national_info.home_value) %> (nat'l avg) <li>
   <li>Mode of Transportation:</li>
   <ul>
   <% @people_info.transportation.each do |type| %><li>

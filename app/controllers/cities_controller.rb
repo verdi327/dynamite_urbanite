@@ -1,28 +1,22 @@
 class CitiesController < ApplicationController
   def index
     @cities = City.search(params)
-
-    respond_to do |format|
-      format.html
-      format.json { render json: @cities }
-    end
   end
 
   def show
     @city = City.find(params[:id])
     @current_weather = WeatherApi::TodaysWeather.current_weather(@city.full_name)
     @people_info = ZillowApi::People.find_by_city({city: @city.name, state: @city.state})
-    client = Foursquare2::Client.new(client_id: CLIENT_ID, client_secret: CLIENT_SECRET )
-    @rec_places = client.explore_venues(ll: "#{@city.latitude},#{@city.longitude}", radius: '8000')
+    @national_info = ZillowApi::National.find_by_city({city: @city.name, state: @city.state})
+    @industry = CityData::CityIndustries.find_by_city({city: @city.name, state: @city.state})
+    # client = Foursquare2::Client.new(client_id: CLIENT_ID, client_secret: CLIENT_SECRET )
+    # @rec_places = client.explore_venues(ll: "#{@city.latitude},#{@city.longitude}", radius: '8000')
+    # @instagram_photos = Instagram.media_search(@city.short_lat, @city.short_lng, {count: 18})
+    @deals = LivingSocialApi::DailyDealBuilder.build_for_city(@city.name)
   end
 
   def new
     @city = City.new
-
-    respond_to do |format|
-      format.html
-      format.json { render json: @city }
-    end
   end
 
   def edit

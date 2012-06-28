@@ -2,11 +2,11 @@
 <h5> Meet the family </h5>
 
 <ul>
-  <li>Population: <%= number_with_delimiter(@city.population, delimiter: ", ") %></li>
-  <li>Single Males: <%= format_as_percentage(@people_info.single_males) %></li>
-  <li>Single Females: <%= format_as_percentage(@people_info.single_females) %></li>
+  <li>Population: <%= number_with_delimiter(@city.population, delimiter: ",") %></li>
+  <li>Single Males: <%= format_as_percentage(@people_info.single_males) %> | <%= format_as_percentage(@national_info.single_males) %> (nat'l average)</li>
+  <li>Single Females: <%= format_as_percentage(@people_info.single_females) %> | <%= format_as_percentage(@national_info.single_females) %> (nat'l average)</li>
   <li>Types of People</li>
   <% @people_info.who_live_here.each do |title, description| %>
-    <p><%= title %> --- <%= description%></p>
+    <p><%= title %> --- <%= description %></p>
   <% end %>
 </ul>

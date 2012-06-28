@@ -1,0 +1,12 @@
+<h3>Things To Do</h3>
+<h5>and save a buck too</h5>
+
+<ul>
+<% @deals.each do |deal| %>
+  <li><%= link_to(image_tag(deal.image), deal.url) %></li>
+  <li><%= deal.title %></li>
+  <li><%= deal.description %></li>
+  <li><%= deal.original_price %></li>
+  <li><%= deal.deal_price %></li>
+<% end %>
+</ul>

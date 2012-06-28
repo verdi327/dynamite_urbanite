@@ -18,4 +18,12 @@ class City < ActiveRecord::Base
     "http://" + self['display_photo']
   end
 
+  def short_lat
+    self.latitude.to_s[0..4]
+  end
+
+  def short_lng
+    self.longitude.to_s[0..5]
+  end
+
 end

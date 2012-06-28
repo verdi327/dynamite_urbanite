@@ -1,3 +1,28 @@
+GIT
+  remote: git://github.com/verdi327/instagram.git
+  revision: f9996ad6da8c73609cc5bb13b239a4d6ac1a3377
+  specs:
+    instagram (0.8.7)
+      faraday (~> 0.7.6)
+      faraday_middleware (~> 0.8)
+      hashie (>= 0.4.0)
+      multi_json (~> 1.0.3)
+
+GIT
+  remote: git://github.com/verdi327/livingsocial_scraper.git
+  revision: 358c0b992091406c0ce9cef84dec8e39ef5cf6d6
+  specs:
+    livingsocial (0.0.1)
+      nokogiri
+
+GIT
+  remote: git://github.com/verdi327/zillow_api.git
+  revision: 2cc6848d886dac151dd4a4ace12b16fa0d9842a6
+  specs:
+    zillow_demographics (0.0.3)
+      faraday
+      nokogiri
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -28,6 +53,7 @@ GEM
     activesupport (3.2.5)
       i18n (~> 0.6)
       multi_json (~> 1.0)
+    addressable (2.2.8)
     arel (3.0.2)
     builder (3.0.0)
     coffee-rails (3.2.2)
@@ -43,12 +69,14 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
-    faraday (0.8.1)
+    faraday (0.7.6)
+      addressable (~> 2.2)
       multipart-post (~> 1.1)
-    faraday_middleware (0.8.7)
+      rack (~> 1.1)
+    faraday_middleware (0.8.8)
       faraday (>= 0.7.4, < 0.9)
-    foursquare2 (1.5.0)
-      faraday (~> 0.8)
+    foursquare2 (1.3.6)
+      faraday (>= 0.6, < 0.8)
       faraday_middleware (>= 0.8)
       hashie (~> 1.0)
     hashie (1.2.0)
@@ -65,7 +93,9 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.19)
-    multi_json (1.3.6)
+    most_common_industry (0.0.2)
+      nokogiri
+    multi_json (1.0.4)
     multipart-post (1.1.5)
     nokogiri (1.5.5)
     polyglot (0.3.3)
@@ -118,12 +148,9 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.33)
-    uglifier (1.2.5)
+    uglifier (1.2.4)
       execjs (>= 0.3.0)
-      multi_json (~> 1.3)
-    zillow_demographics (0.0.2)
-      faraday
-      nokogiri
+      multi_json (>= 1.0.2)
 
 PLATFORMS
   ruby
@@ -132,10 +159,13 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   current_weather
   foursquare2
+  instagram!
   jquery-rails
+  livingsocial!
+  most_common_industry
   rails (= 3.2.5)
   sass-rails (~> 3.2.3)
   sqlite3
   tire
   uglifier (>= 1.0.3)
-  zillow_demographics
+  zillow_demographics!
