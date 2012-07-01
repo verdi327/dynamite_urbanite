@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120630193332) do
+ActiveRecord::Schema.define(:version => 20120701173059) do
 
   create_table "background_photos", :force => true do |t|
     t.string   "image"
@@ -122,6 +122,14 @@ ActiveRecord::Schema.define(:version => 20120630193332) do
     t.integer  "city_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "twitter_posts", :force => true do |t|
+    t.string   "tweeted_by"
+    t.string   "tweet"
+    t.integer  "city_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "walk_scores", :force => true do |t|

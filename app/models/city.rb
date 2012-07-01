@@ -10,6 +10,7 @@ class City < ActiveRecord::Base
   has_many :transportation_types
   has_many :daily_deals
   has_many :current_weathers
+  has_many :twitter_posts
 
   include Tire::Model::Search
   include Tire::Model::Callbacks
@@ -36,12 +37,20 @@ class City < ActiveRecord::Base
     self.longitude.to_s[0..5]
   end
 
-  def no_photos
-    self.instagram_photos.first.image == "N/A"
+  def no_valid_photos
+    true if self.instagram_photos.where("image != ?", "N/A").size == 0
   end
 
   def only_valid_photos
-    self.instagram_photos.where("image != ?", "N/A")
+    self.instagram_photos.where("image != ?", "N/A").shuffle
+  end
+
+  def love_tweets
+    self.twitter_posts.select {|post| post.tweet.include?('love')}
+  end
+
+  def hate_tweets
+    self.twitter_posts.select {|post| post.tweet.include?('hate')}
   end
 
 end

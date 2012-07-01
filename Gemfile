@@ -15,7 +15,8 @@ gem 'instagram', github: 'verdi327/instagram'
 gem 'livingsocial2', github: 'verdi327/livingsocial2'
 gem 'walkscore', github: 'verdi327/walkscore'
 gem 'twitter-bootstrap-rails'
-gem 'resque'
+gem 'flickraw'
+gem 'twitter'
 
 
 
