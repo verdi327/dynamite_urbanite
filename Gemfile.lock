@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/verdi327/current_weather_gem.git
+  revision: 27ad0b862976d0cd67de9e2724b5d1ff66be0236
+  specs:
+    current_weather (0.0.3)
+      faraday
+      nokogiri
+
+GIT
   remote: git://github.com/verdi327/instagram.git
   revision: f9996ad6da8c73609cc5bb13b239a4d6ac1a3377
   specs:
@@ -9,11 +17,11 @@ GIT
       multi_json (~> 1.0.3)
 
 GIT
-  remote: git://github.com/verdi327/livingsocial_scraper.git
-  revision: 358c0b992091406c0ce9cef84dec8e39ef5cf6d6
+  remote: git://github.com/verdi327/livingsocial2.git
+  revision: 5552a8defe01c0c956f041c124316884c308e64c
   specs:
-    livingsocial (0.0.1)
-      nokogiri
+    livingsocial2 (0.0.3)
+      faraday
 
 GIT
   remote: git://github.com/verdi327/walkscore.git
@@ -21,14 +29,6 @@ GIT
   specs:
     walkscore (0.0.1)
       faraday
-
-GIT
-  remote: git://github.com/verdi327/zillow_api.git
-  revision: 2cc6848d886dac151dd4a4ace12b16fa0d9842a6
-  specs:
-    zillow_demographics (0.0.3)
-      faraday
-      nokogiri
 
 GEM
   remote: https://rubygems.org/
@@ -70,9 +70,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.3.3)
-    current_weather (0.0.3)
-      faraday
-      nokogiri
+    commonjs (0.2.6)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -95,6 +93,12 @@ GEM
       railties (>= 3.2.0, < 5.0)
       thor (~> 0.14)
     json (1.7.3)
+    less (2.2.1)
+      commonjs (~> 0.2.6)
+    less-rails (2.2.3)
+      actionpack (>= 3.1)
+      less (~> 2.2.0)
+    libv8 (3.3.10.4)
     mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -109,6 +113,8 @@ GEM
     rack (1.4.1)
     rack-cache (1.2)
       rack (>= 0.4)
+    rack-protection (1.2.0)
+      rack
     rack-ssl (1.3.2)
       rack
     rack-test (0.6.1)
@@ -131,19 +137,33 @@ GEM
     rake (0.9.2.2)
     rdoc (3.12)
       json (~> 1.4)
+    redis (2.2.2)
+    redis-namespace (1.0.3)
+      redis (< 3.0.0)
+    resque (1.20.0)
+      multi_json (~> 1.0)
+      redis-namespace (~> 1.0.2)
+      sinatra (>= 0.9.2)
+      vegas (~> 0.1.2)
     rest-client (1.6.7)
       mime-types (>= 1.16)
-    sass (3.1.19)
+    sass (3.1.20)
     sass-rails (3.2.5)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
+    sinatra (1.3.2)
+      rack (~> 1.3, >= 1.3.6)
+      rack-protection (~> 1.2)
+      tilt (~> 1.3, >= 1.3.3)
     sprockets (2.1.3)
       hike (~> 1.2)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
     sqlite3 (1.3.6)
-    thor (0.15.3)
+    therubyracer (0.10.1)
+      libv8 (~> 3.3.10)
+    thor (0.15.4)
     tilt (1.3.3)
     tire (0.4.2)
       activemodel (>= 3.0)
@@ -154,26 +174,38 @@ GEM
     treetop (1.4.10)
       polyglot
       polyglot (>= 0.3.1)
+    twitter-bootstrap-rails (2.1.0)
+      actionpack (>= 3.1)
+      less-rails (~> 2.2.2)
+      railties (>= 3.1)
+      therubyracer (~> 0.10.1)
     tzinfo (0.3.33)
     uglifier (1.2.4)
       execjs (>= 0.3.0)
       multi_json (>= 1.0.2)
+    vegas (0.1.11)
+      rack (>= 1.0.0)
+    zillow_demographics (0.0.4)
+      faraday
+      nokogiri
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
-  current_weather
+  current_weather!
   foursquare2
   instagram!
   jquery-rails
-  livingsocial!
+  livingsocial2!
   most_common_industry
   rails (= 3.2.5)
+  resque
   sass-rails (~> 3.2.3)
   sqlite3
   tire
+  twitter-bootstrap-rails
   uglifier (>= 1.0.3)
   walkscore!
-  zillow_demographics!
+  zillow_demographics

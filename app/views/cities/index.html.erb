@@ -1,11 +1,17 @@
-<%= form_tag cities_path, method: :get do %>
-  <p>
-    <%= text_field_tag :query, params[:query] %>
-    <%= submit_tag "Search", name: nil %>
-  </p>
-<% end %>
+<style type="text/css">
+  body {
+    background-image:url("http://www.1zoom.net/big2/84/256721-frederika.jpg");
+  }
 
-<h1>Listing cities</h1>
+</style>
+
+<div class="well span6" style="margin-top:25%; margin-left:25%">
+  <div class="page-header">Dynamite Urbanite</div>
+  <%= form_tag cities_path, method: :get do %>
+    <%= text_field_tag :query, params[:query] %>
+    <%= submit_tag "Search", name: nil, class: "btn-success" %>
+  <% end %>
+</div>
 
 <table>
   <tr>

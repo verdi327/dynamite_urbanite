@@ -7,13 +7,16 @@ gem 'rails', '3.2.5'
 
 gem 'sqlite3'
 gem 'tire'
-gem 'current_weather'
-gem 'zillow_demographics', github: 'verdi327/zillow_api'
+gem 'current_weather', github: 'verdi327/current_weather_gem'
+gem 'zillow_demographics'#, github: 'verdi327/zillow_api'
 gem 'foursquare2'
 gem 'most_common_industry'
 gem 'instagram', github: 'verdi327/instagram'
-gem 'livingsocial', github: 'verdi327/livingsocial_scraper'
+gem 'livingsocial2', github: 'verdi327/livingsocial2'
 gem 'walkscore', github: 'verdi327/walkscore'
+gem 'twitter-bootstrap-rails'
+gem 'resque'
+
 
 
 # Gems used only for assets and not required

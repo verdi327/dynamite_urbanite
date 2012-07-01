@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  city_id: 1
+  single_males: MyString
+  single_females: MyString
+  median_age: MyString
+  average_commute_time: MyString
+  home_value: MyString
+
+two:
+  city_id: 1
+  single_males: MyString
+  single_females: MyString
+  median_age: MyString
+  average_commute_time: MyString
+  home_value: MyString

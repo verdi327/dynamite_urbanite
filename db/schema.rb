@@ -11,7 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120626010000) do
+ActiveRecord::Schema.define(:version => 20120630193332) do
+
+  create_table "background_photos", :force => true do |t|
+    t.string   "image"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "cities", :force => true do |t|
     t.string   "name"
@@ -22,6 +28,111 @@ ActiveRecord::Schema.define(:version => 20120626010000) do
     t.string   "display_photo"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
+    t.string   "tagline"
+  end
+
+  create_table "current_weathers", :force => true do |t|
+    t.string   "condition"
+    t.string   "temperature"
+    t.string   "humidity"
+    t.string   "wind_condition"
+    t.string   "icon"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+    t.integer  "city_id"
+  end
+
+  create_table "daily_deals", :force => true do |t|
+    t.integer  "city_id"
+    t.string   "image_url"
+    t.string   "url"
+    t.string   "description"
+    t.string   "title"
+    t.integer  "original_price"
+    t.integer  "deal_price"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  create_table "foursquare_places", :force => true do |t|
+    t.string   "icon"
+    t.string   "venue_name"
+    t.integer  "city_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "instagram_photos", :force => true do |t|
+    t.string   "image"
+    t.integer  "city_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "national_deals", :force => true do |t|
+    t.string   "image_url"
+    t.string   "url"
+    t.string   "description"
+    t.integer  "original_price"
+    t.integer  "deal_price"
+    t.string   "title"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  create_table "national_facts", :force => true do |t|
+    t.integer  "city_id"
+    t.string   "single_males"
+    t.string   "single_females"
+    t.string   "median_age"
+    t.string   "average_commute_time"
+    t.string   "home_value"
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
+  end
+
+  create_table "people_facts", :force => true do |t|
+    t.integer  "city_id"
+    t.string   "single_males"
+    t.string   "single_females"
+    t.string   "median_age"
+    t.string   "average_commute_time"
+    t.string   "home_value"
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
+  end
+
+  create_table "people_types", :force => true do |t|
+    t.integer  "city_id"
+    t.string   "name"
+    t.string   "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "top_industries", :force => true do |t|
+    t.string   "name"
+    t.integer  "city_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "transportation_types", :force => true do |t|
+    t.string   "description"
+    t.integer  "city_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "walk_scores", :force => true do |t|
+    t.integer  "city_id"
+    t.integer  "score"
+    t.string   "description"
+    t.string   "logo_url"
+    t.string   "ws_link"
+    t.string   "last_updated"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
 end

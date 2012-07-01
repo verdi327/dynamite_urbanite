@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  icon: MyString
+  venue: MyString
+
+two:
+  icon: MyString
+  venue: MyString

@@ -1,8 +1,18 @@
-<h3>Photos</h3>
-<h5>a picture says a thousand words</h5>
-
-<ul>
-<% @instagram_photos.data.each do |response| %>
-  <li><%= image_tag(response.images.standard_resolution.url) %></li>
-<% end %>
-</ul>
+<div class="well">
+  <div class="page-header"><h3>Photos</h3></div>
+  <h5>a picture says a thousand words</h5>
+  <div class="row">
+    <% if @city.no_photos %>
+      <div class="span6">
+        <h4>Currently No Photos Available</h4>
+        <%= image_tag("http://thedesigninspiration.com/wp-content/uploads/2010/03/fail-whale/Fail-Whale-15.jpg") %>
+      </div>
+    <% else %>
+    <div class="span3">
+      <% @city.only_valid_photos.each do |photo| %>
+        <%= image_tag(photo.image) %>
+      <% end %>
+    </div>
+    <% end %>
+  </div>
+</div>

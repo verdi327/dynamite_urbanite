@@ -1,12 +1,32 @@
-<h3>The People</h3>
-<h5> Meet the family </h5>
+<div class="well">
+  <div class='page-header'><h3> Meet the family </h3></div>
+  <div class="row">
+    <div class="span5">
+      <h3>Groups of People Who Live Here</h3>
+      <ul class="unstyled">
+        <% @city.people_types.each do |type| %>
+          <li><h4><%= type.name.titleize %></h4></li>
+          <li><%= type.description %></li>
+        <% end %>
+      </ul>
+    </div>
 
-<ul>
-  <li>Population: <%= number_with_delimiter(@city.population, delimiter: ",") %></li>
-  <li>Single Males: <%= format_as_percentage(@people_info.single_males) %> | <%= format_as_percentage(@national_info.single_males) %> (nat'l average)</li>
-  <li>Single Females: <%= format_as_percentage(@people_info.single_females) %> | <%= format_as_percentage(@national_info.single_females) %> (nat'l average)</li>
-  <li>Types of People</li>
-  <% @people_info.who_live_here.each do |title, description| %>
-    <p><%= title %> --- <%= description %></p>
-  <% end %>
-</ul>
+    <div class="span5">
+      <div class="row">
+        <div class="span2 offset1">
+          <h4> Single Males </h4>
+          <% @city.people_facts.each do |fact| %>
+            <h5><%= @city.name %></h5>
+            <%= format_as_percentage(fact.single_males) %>
+          <% end %>
+        </div>
+        <div class="span2">
+          <h5>National</h5>
+          <%= format_as_percentage(NationalFact.first.single_males) %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+

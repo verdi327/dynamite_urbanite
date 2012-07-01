@@ -1,20 +1,59 @@
-<h3>The Economy</h3>
-<h5>how they make $$$</h5>
+<div class="well">
+  <div class="page-header"><h3>Makin' It Rain</h3></div>
+  <div class="row">
+    <div class="span5">
+      <p> Most Common Industries </p>
+      <ul class="unstyled">
+      <% @city.top_industries.each_with_index do |category, index| %>
+        <% updated = index + 1 %>
+        <li><%= "#{updated}: #{category.name}" %></li>
+      <% end %>
+      </ul>
+    </div>
 
-<p> Most Common Industries </p>
-<ul>
-<% @industry.most_common.each do |category| %>
-  <li><%= category %></li>
-<% end %>
-</ul>
+    <div class="span5">
+      <div class="row">
+      <h4>Average Commute Time(minutes)</h4>
+        <div class="span1" style="margin-left:0px">
+          <div><%= @city.name %></div>
+          <div class="average-commute-time"><%= format_as_minutes(@city.people_facts.first.average_commute_time)%></div>
+        </div>
+        <div class="span1">
+          <div class="vs">vs</div>
+        </div>
+        <div class="span1">
+          <div>National</div>
+          <div class="average-commute-time"><%=format_as_minutes(NationalFact.first.average_commute_time)%></div>
+        </div>
+      </div>
 
-<ul>
-  <li>Average Communte Time: <%= format_as_minutes(@people_info.average_commute_time) %> | <%= format_as_minutes(@national_info.average_commute_time) %> (nat'l avg)<li>
-  <li>Average Home Value: $ <%= number_with_delimiter(@people_info.home_value, delimiter: ',') %> | <%= number_with_delimiter(@national_info.home_value) %> (nat'l avg) <li>
-  <li>Mode of Transportation:</li>
-  <ul>
-  <% @people_info.transportation.each do |type| %><li>
-    <li><%= type %></li>
-  <% end %>
-  </ul>
-</ul>
+      <div class="row">
+      <h4>Average Home Value</h4>
+        <div class="span1" style="margin-left:0px">
+          <div><%= @city.name %></div>
+          $<%= number_with_delimiter(@city.people_facts.first.home_value, delimiter: ",")%>
+        </div>
+        <div class="span1">
+          <div class="vs">vs</div>
+        </div>
+        <div class="span1">
+          <div>National</div>
+          $<%= number_with_delimiter(NationalFact.first.home_value, delimiter: ",")%>
+        </div>
+      </div>
+
+      <div class="row">
+      <h4>Gettin' To Work</h4>
+        <div class="span2" style="margin-left:0px">
+          <ul class="unstyled">
+            <% @city.transportation_types.each do |type| %>
+              <li><%=type.description %></li>
+            <% end %>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+

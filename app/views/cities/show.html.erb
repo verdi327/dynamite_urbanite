@@ -1,14 +1,43 @@
-<p id="notice"><%= notice %></p>
+<style type="text/css">
+  body {
+    background-image:url("http://all-free-download.com/downloadfiles/wallpapers/1920_1200_widescreen/blue_city_wallpaper_vector_3d_wallpaper_1920_1200_widescreen_120.jpg");
+  }
 
-<ul>
-  <li><h1><%= @city.full_name %></h1></li>
-  <li><%= image_tag(@city.display_photo) %></li>
-</ul>
+</style>
+<div class="row">
+  <div class="well span4">
+    <h1><%= @city.full_name %></h1>
+    <h3><%= @city.tagline %></h3>
+  </div>
+  <%= render 'quick_dash' %>
+</div>
 
-<%= render 'walkscore' %>
-<%= render 'weather' %>
-<%= render 'economy' %>
-<%= render 'people' %>
-<%= render 'deals' %>
+
+<div class="tabbable">
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#tab1" data-toggle="tab">People</a></li>
+    <li><a href="#tab2" data-toggle="tab">Economy</a></li>
+    <li><a href="#tab3" data-toggle="tab">Things To Do</a></li>
+    <li><a href="#tab4" data-toggle="tab">Places To Go</a></li>
+    <li><a href="#tab5" data-toggle="tab">Photos</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="tab1">
+      <%= render 'people' %>
+    </div>
+    <div class="tab-pane" id="tab2">
+      <%= render 'economy' %>
+    </div>
+    <div class="tab-pane" id="tab3">
+      <%= render 'deals' %>
+    </div>
+    <div class="tab-pane" id="tab4">
+      <%= render 'recommended_places' %>
+    </div>
+    <div class="tab-pane" id="tab5">
+      <%= render 'photos' %>
+    </div>
+  </div>
+</div>
 
 

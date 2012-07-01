@@ -1,8 +1,26 @@
-<h3>Recommended Places</h3>
-<h5>where the locals hang<h5>
-
-<ul>
-<% @rec_places.groups.first.items.each do |item| %>
-  <li><%= image_tag(item.venue.categories.first.icon) %>---<%= item.venue.name %></li>
-<% end %>
-</ul>
+<div class="well">
+  <div class="page-header"><h3>Where the locals hang<h3></div>
+  <div class="row">
+    <div class="span3">
+      <ul class="unstyled">
+      <% @city.foursquare_places[0..9].each do |item| %>
+        <li class="foursquare"><%= image_tag(item.icon) %> - <%= item.venue_name %></li>
+      <% end %>
+      </ul>
+    </div>
+    <div class="span3 offset1">
+      <ul class="unstyled">
+      <% @city.foursquare_places[10..19].each do |item| %>
+        <li class="foursquare"><%= image_tag(item.icon) %> - <%= item.venue_name %></li>
+      <% end %>
+      </ul>
+    </div>
+    <div class="span3 offset1">
+      <ul class="unstyled">
+      <% @city.foursquare_places[20..30].each do |item| %>
+        <li class="foursquare"><%= image_tag(item.icon) %> - <%= item.venue_name %></li>
+      <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

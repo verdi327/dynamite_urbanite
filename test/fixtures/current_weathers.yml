@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  condition: MyString
+  temperature: MyString
+  humidity: MyString
+  wind_condition: MyString
+  icon: MyString
+
+two:
+  condition: MyString
+  temperature: MyString
+  humidity: MyString
+  wind_condition: MyString
+  icon: MyString
