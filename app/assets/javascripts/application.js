@@ -12,5 +12,18 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require cookie
 //= require twitter/bootstrap
 //= require_tree .
+
+var current_tab = $.cookie('current_tab');
+
+$(document).ready(function() {
+  if(current_tab) {
+    $('a[href$="'+current_tab+'"]').tab('show');
+  }
+});
+
+$(".nav-tabs > li > a").live('click', function() {
+  $.cookie('current_tab', $(this).attr('href'));
+});
