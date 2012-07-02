@@ -17,7 +17,9 @@
   <tr>
     <th></th>
   </tr>
-<% if @cities.count == 0 %>
+
+<% if @cities == nil %>
+<% elsif @cities.count == 0 %>
     <h3> So sorry, we were unable to find that city! </h3>
 <% else %>
     <% @cities.each do |city| %>

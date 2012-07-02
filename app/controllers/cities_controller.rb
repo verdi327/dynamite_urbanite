@@ -1,6 +1,7 @@
 class CitiesController < ApplicationController
   def index
-    @cities = City.search(params)
+    @cities = City.search(params) if params[:query]
+    @cities ||= nil
   end
 
   def show
