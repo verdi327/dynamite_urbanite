@@ -2,19 +2,19 @@
   <div class="page-header"><h3>Let's Juxtapose People's Feelings via Twitter</h3></div>
   <div class="row">
     <div class="span5">
-      <p><%= "Love #{@city.name}" %> </p>
+      <div class="bottom"><%= "Love #{@city.name}" %> </div>
       <ul class="unstyled">
-      <% @city.love_tweets.each_with_index do |post| %>
-        <li><%= "#{post.tweeted_by} exclaims: #{post.tweet}" %></li>
+      <% @city.love_tweets.each do |post| %>
+        <div class="well"><li><strong><%= "#{post.tweeted_by} exclaims: " %></strong><%="#{post.tweet}" %></li></div>
       <% end %>
       </ul>
     </div>
 
     <div class="span5 offset1">
-    <p><%= "Hate #{@city.name}" %> </p>
+    <div class="bottom"><%= "Hate #{@city.name}" %> </div>
       <ul class="unstyled">
       <% @city.hate_tweets.each do |post| %>
-        <li><%= "#{post.tweeted_by} scoffs: #{post.tweet}" %></li>
+        <div class="well"><li><strong><%= "#{post.tweeted_by} scoffs: " %></strong><%="#{post.tweet}" %></li></div>
       <% end %>
       </ul>
     </div>
