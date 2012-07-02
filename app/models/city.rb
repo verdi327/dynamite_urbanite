@@ -57,4 +57,8 @@ class City < ActiveRecord::Base
     self.name
   end
 
+  def no_local_deals
+    true if self.daily_deals == []
+  end
+
 end

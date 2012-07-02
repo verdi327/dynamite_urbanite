@@ -1,22 +1,34 @@
 <div class="well">
-  <div class="page-header"><h3>Enjoy the City at Half the Price</h3></div>
+  <div class="page-header page-top-header">Enjoy the City at Half the Price</div>
   <div class="row">
-    <div class="span3">
-      <div class="deal">
-        <% @city.daily_deals.all[0..2].each do |deal| %>
-          <%= deal.title %>
-          <%= link_to(image_tag(deal.image_url), deal.url) %>
-          <%= deal.description %>
-          <%= to_dollars(deal.deal_price) %>
-          <%= to_dollars(deal.original_price) %>
+    <% if @city.no_local_deals %>
+      <div class="span12">
+        <ul class="unstyled">
+        <% NationalDeal.all.each do |deal| %>
+          <div class="span4 no_margin deal">
+            <li><%= deal.description %></li>
+            <li><%= link_to(image_tag(deal.image_url), deal.url) %></li>
+            <li><%= deal.title %></li>
+            <li><%= to_dollars(deal.deal_price) %></li>
+            <li><%= to_dollars(deal.original_price) %></li>
+          </div>
         <% end %>
+        </ul>
       </div>
-    </div>
-    <div class="span3 offset1">
-      <p>hi</p>
-    </div>
-    <div class="span3 offset1">
-      <p>hi</p>
-    </div>
+    <% else %>
+      <div class="span12">
+        <ul class="unstyled">
+        <% @city.daily_deals.each do |deal| %>
+          <div class="span4 no_margin deal">
+            <li><%= deal.description %></li>
+            <li><%= link_to(image_tag(deal.image_url), deal.url) %></li>
+            <li><%= deal.title %></li>
+            <li><%= to_dollars(deal.deal_price) %></li>
+            <li><%= to_dollars(deal.original_price) %></li>
+          </div>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
   </div>
 </div>

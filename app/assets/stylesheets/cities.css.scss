@@ -5,8 +5,14 @@
 
 
 .bottom{
+  padding-top:20px;
   padding-bottom: 20px;
   font-size: 20px
+}
+
+.page-top-header{
+  font-size:30px;
+  bottom:20px;
 }
 
 .no_margin{
@@ -22,5 +28,25 @@
 }
 
 .title_text{
-  font-size: 30px
+  font-size: 45px;
+  padding-bottom:20px;
+}
+
+.deal img{
+  height:100px;
+  width:100px;
+}
+
+.walkscore{
+  font-size:35px;
+
+}
+
+.quick_dash_title{
+  font-size:20px;
+  padding-bottom:10px;
+}
+
+.bottom_caption{
+  border:1px solid black;
 }

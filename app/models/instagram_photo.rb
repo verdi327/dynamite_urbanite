@@ -5,7 +5,7 @@ class InstagramPhoto < ActiveRecord::Base
   paginates_per 16
 
   def self.only_valid_photos
-    where("image != ?", "N/A")
+    where("image != ?", "N/A").order('random()')
   end
 
 

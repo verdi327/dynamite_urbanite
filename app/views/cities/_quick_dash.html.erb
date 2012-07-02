@@ -1,19 +1,27 @@
 <div class="well span2">
-  <ul class="unstyled">
-    <li><h4>Current Weather</h4></li>
-    <li><%= @weather.condition %></li>
-    <li><%= @weather.temperature %></li>
-    <li><%= @weather.humidity %></li>
-    <li><%= @weather.wind_condition %></li>
-    <li><%= image_tag(as_photo(@weather.icon)) %></li>
-  </ul>
+  <div class="quick_dash_title">Current Weather</div>
+  <div class="row">
+    <ul class="unstyled">
+      <div class="span1">
+        <li><%= image_tag(as_photo(@weather.icon)) %></li>
+      </div>
+      <div class="span1 no_margin style=margin-right:0px">
+        <li>Temp: <%= @weather.temperature %></li>
+        <li><%= @weather.humidity %></li>
+        <li><%= @weather.wind_condition %></li>
+      </div>
+    </ul>
+  </div>
+  <div class="bottom_caption"><%= @weather.condition %></div>
 </div>
 <div class="well span2">
+  <div class="quick_dash_title">Walk Score</div>
   <ul class="unstyled">
-    <li><h4>Walk Score</h4></li>
-    <li><%= @city.walk_score.score %></li>
-    <li><%= @city.walk_score.description %></li>
+    <div class="walkscore">
+      <li><%= @city.walk_score.score %></li>
+    </div>
   </ul>
+  <div class="bottom_caption"><%= @city.walk_score.description %></div>
 </div>
 <div class="span2">
   <%= button_to "New Search", root_path, class: "btn-success" %>
