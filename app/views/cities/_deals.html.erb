@@ -1,6 +1,6 @@
 <div class="well">
   <div class="page-header page-top-header">Enjoy the City at Half the Price</div>
-  <div class="row">
+  <div class="row-fluid">
     <% if @city.no_local_deals %>
       <div class="span12">
         <ul class="unstyled">
@@ -20,11 +20,15 @@
         <ul class="unstyled">
         <% @city.daily_deals.each do |deal| %>
           <div class="span4 no_margin deal">
-            <li><%= deal.description %></li>
             <li><%= link_to(image_tag(deal.image_url), deal.url) %></li>
-            <li><%= deal.title %></li>
-            <li><%= to_dollars(deal.deal_price) %></li>
-            <li><%= to_dollars(deal.original_price) %></li>
+            <div class="deal_caption">
+              <li><span class="deal_description"><%= deal.description.truncate(39) %></span></li>
+              <div class="price_and_button">
+                <li><span class="original_price"><%= to_dollars(deal.original_price) %></span>
+                <span class="deal_price"><%= to_dollars(deal.deal_price) %></span>
+                <%= link_to "View Deal", deal.url, class: "btn btn-success" %></li>
+              </div>
+            </div>
           </div>
         <% end %>
         </ul>

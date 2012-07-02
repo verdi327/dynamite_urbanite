@@ -1,9 +1,14 @@
 <style type="text/css">
   body {
-    background-image:url("http://all-free-download.com/downloadfiles/wallpapers/1920_1200_widescreen/blue_city_wallpaper_vector_3d_wallpaper_1920_1200_widescreen_120.jpg");
-  }
+    -webkit-background-size: cover;
+    -moz-background-size: cover; -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    gradient(#8a8a8a, #4a4a4a);
+    background-image: url("http://all-free-download.com/downloadfiles/wallpapers/1920_1200_widescreen/blue_city_wallpaper_vector_3d_wallpaper_1920_1200_widescreen_120.jpg"); margin: 0; background-repeat: no-repeat; background-attachment: fixed; }
 
 </style>
+
 <div class="row">
   <div class="well span6">
     <div class="title_text"><%= @city.full_name %></div>
