@@ -4,12 +4,19 @@
 
 
 
-body {
- background: url();
- background-repeat: no-repeat
-}
-
 .bottom{
   padding-bottom: 20px;
   font-size: 25px
+}
+
+.no_margin{
+  margin-left:0px;
+  margin-right:0px;
+}
+
+.display_photo img{
+  height: 250px;
+  width: 250px;
+  border-radius: 2px;
+  padding-bottom: 25px;
 }

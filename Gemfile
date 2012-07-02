@@ -17,6 +17,7 @@ gem 'walkscore', github: 'verdi327/walkscore'
 gem 'twitter-bootstrap-rails'
 gem 'flickraw'
 gem 'twitter'
+gem 'kaminari'
 
 
 

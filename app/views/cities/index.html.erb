@@ -8,7 +8,7 @@
 <div class="well span6" style="margin-top:25%; margin-left:25%">
   <div class="page-header">Dynamite Urbanite</div>
   <%= form_tag cities_path, method: :get do %>
-    <%= text_field_tag :query, params[:query] %>
+    <%= text_field_tag :query, params[:query], placeholder: "ex. New-York" %>
     <%= submit_tag "Search", name: nil, class: "btn-success" %>
   <% end %>
 </div>

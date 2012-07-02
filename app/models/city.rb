@@ -53,4 +53,8 @@ class City < ActiveRecord::Base
     self.twitter_posts.select {|post| post.tweet.include?('hate')}
   end
 
+  def to_param
+    self.name
+  end
+
 end

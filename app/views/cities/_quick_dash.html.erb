@@ -1,20 +1,21 @@
-<ul class="unstyled">
-  <li class="well span2">
-    <ul class="unstyled">
-      <li><h4>Current Weather</h4></li>
-      <li><%= @weather.condition %></li>
-      <li><%= @weather.temperature %></li>
-      <li><%= @weather.humidity %></li>
-      <li><%= @weather.wind_condition %></li>
-      <li><%= image_tag(as_photo(@weather.icon)) %></li>
-    </ul>
-  </li>
-  <li class="well span2">
-    <ul class="unstyled">
-      <li><h4>Walk Score</h4></li>
-      <li><%= @city.walk_score.score %></li>
-      <li><%= @city.walk_score.description %></li>
-    </ul>
-  </li>
-</ul>
+<div class="well span2">
+  <ul class="unstyled">
+    <li><h4>Current Weather</h4></li>
+    <li><%= @weather.condition %></li>
+    <li><%= @weather.temperature %></li>
+    <li><%= @weather.humidity %></li>
+    <li><%= @weather.wind_condition %></li>
+    <li><%= image_tag(as_photo(@weather.icon)) %></li>
+  </ul>
+</div>
+<div class="well span2">
+  <ul class="unstyled">
+    <li><h4>Walk Score</h4></li>
+    <li><%= @city.walk_score.score %></li>
+    <li><%= @city.walk_score.description %></li>
+  </ul>
+</div>
+<div class="span2">
+  <%= button_to "New Search", root_path, class: "btn-success" %>
+</div>
 <div class="clearfix"></div>
