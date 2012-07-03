@@ -21,7 +21,7 @@ namespace :custom do
                                   city_id:    city.id )
         end
       end
-      sleep 5
+      sleep 1
       puts "successfully created instagram photo for #{city.name}"
     end
   end
