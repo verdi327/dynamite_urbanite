@@ -6,11 +6,13 @@
         <ul class="unstyled">
         <% NationalDeal.all.each do |deal| %>
           <div class="span4 no_margin deal">
-            <li><%= deal.description %></li>
-            <li><%= link_to(image_tag(deal.image_url), deal.url) %></li>
-            <li><%= deal.title %></li>
-            <li><%= to_dollars(deal.deal_price) %></li>
-            <li><%= to_dollars(deal.original_price) %></li>
+            <div class="deal_caption">
+            <div class="deal_image_container"><%= link_to(image_tag(deal.image_url.gsub('100_q60_', '300_q100')), deal.url) %></div>
+              <div class="deal_description"><%= deal.description %></div>
+              <span class="original_price"><%= to_dollars(deal.original_price) %></span>
+              <span class="deal_price"><%= to_dollars(deal.deal_price) %></span>
+              <div class="deal_button"><%= link_to "View Deal", deal.url, class: "btn btn-success" %></div>
+            </div>
           </div>
         <% end %>
         </ul>
