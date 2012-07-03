@@ -5,10 +5,9 @@ gem 'rails', '3.2.5'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
 gem 'tire'
 gem 'current_weather', github: 'verdi327/current_weather_gem'
-gem 'zillow_demographics'#, github: 'verdi327/zillow_api'
+gem 'zillow_demographics'
 gem 'foursquare2'
 gem 'most_common_industry'
 gem 'instagram', github: 'verdi327/instagram'
@@ -19,7 +18,13 @@ gem 'flickraw'
 gem 'twitter'
 gem 'kaminari'
 
+group :production do
+  gem 'pg'
+end
 
+group :development do
+  gem 'sqlite3'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
