@@ -4,6 +4,24 @@
 
 
 
+li#weather_icon img{
+  height:50px;
+  width:50px;
+}
+
+.people-type{
+  padding-bottom:15px;
+}
+
+.description-header{
+  font-size:15px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+h4.versus { float: left; line-height: 45px; margin-left:40px; }
+
 .bottom{
   padding-top:20px;
   padding-bottom: 20px;
@@ -33,29 +51,41 @@
   padding-bottom:20px;
 }
 
+.walkscore{
+  font-size:35px;
+}
+
+/*Deals*/
+
 .deal img{
-  width:350px;
+  width: 300px;
+  float: left;
+  padding-right: 10px;
+  display:block;
+}
+
+.deal_image_container {
+  overflow:hidden;
+  height: 150px !important;
 }
 
 .deal{
   width:250px;
   padding-right: 30px;
-  height:350px;
+  height:250px;
 }
 
-.walkscore{
-  font-size:35px;
+.deal_button{
+  position: relative;
+  bottom: 0px;
+  float:right;
 }
 
 .deal_caption{
   background-color:#D1D1D1;
-  padding-top:15px;
-  padding-bottom:10px;
+  padding: 10px 10px 10px 15px;
+  height: 220px;
 }
-
-.price_and_button{
-/*  padding-top:10px;
-*/}
 
 .original_price{
   text-decoration:line-through;
@@ -64,7 +94,7 @@
 }
 
 .deal_price{
-  font-size:20px;
+  font-size:20px !important;
 }
 
 .deal_description{
@@ -73,12 +103,14 @@
 
 .quick_dash_title{
   font-size:20px;
+  margin-bottom:10px;
 }
 
 .bottom_caption{
   border:1px solid black;
 }
 
+/*Home Page*/
 .splash_header{
   font-size:45px;
   margin-left:12%;
@@ -88,7 +120,7 @@
 }
 
 .search_form{
-  margin-top:15%;
+  margin-top:10%;
   margin-left:25%;
   background-color:rgba(0,0,0,.3);
 }
@@ -112,3 +144,23 @@ input#query{
   height:25px;
   width:42%;
 }
+
+.result{
+  margin-top:0%;
+  color:white;
+  font-size:20px;
+}
+
+li#list_results{
+  padding:8px;
+  margin:5px;
+  font-size:18px;
+}
+
+/*ul.unstyled#list_results li:nth-child(odd){
+  background:#D1D1D1;
+}
+
+ul.unstyled#list_results li:hover{
+  background:#D1D1D1;
+}*/

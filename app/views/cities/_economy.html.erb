@@ -1,56 +1,62 @@
 <div class="well">
-  <div class="page-header page-top-header">Makin' It Rain</div>
+  <div class='page-header page-top-header'>Makin' It Rain</div>
   <div class="row">
     <div class="span5">
-      <p> Most Common Industries </p>
-      <ul class="unstyled">
-      <% @city.top_industries.each_with_index do |category, index| %>
-        <% updated = index + 1 %>
-        <li><%= "#{updated}: #{category.name}" %></li>
-      <% end %>
-      </ul>
+      <div class="bottom">Most Common Industries</div>
+      <div class="well">
+        <ul class="unstyled">
+          <% @city.top_industries.each_with_index do |category, index| %>
+          <div class="people-type">
+            <% updated = index + 1 %>
+            <li><%= "#{updated}: #{category.name}" %></li>
+          </div>
+          <% end %>
+        </ul>
+      </div>
     </div>
 
     <div class="span5">
-      <div class="row">
-      <h4>Average Commute Time(minutes)</h4>
-        <div class="span1" style="margin-left:0px">
-          <div><%= @city.name %></div>
-          <div class="average-commute-time"><%= format_as_minutes(@city.people_facts.first.average_commute_time)%></div>
+      <div class="span5 offset1">
+        <div class="row">
+          <div class="bottom"> Average Commute Time (minutes) </div>
+            <div class="well clearfix">
+              <div class="span1 no_margin">
+                <div class="description-header"><%= @city.name %></div>
+                <p><%= format_as_minutes(@city.people_facts.first.average_commute_time)%></p>
+              </div>
+              <h4 class="versus">vs</h4>
+              <div class="span1">
+                <div class="description-header">National</div>
+                <p><%=format_as_minutes(NationalFact.first.average_commute_time)%></p>
+              </div>
+            </div>
         </div>
-        <div class="span1">
-          <div class="vs">vs</div>
-        </div>
-        <div class="span1">
-          <div>National</div>
-          <div class="average-commute-time"><%=format_as_minutes(NationalFact.first.average_commute_time)%></div>
-        </div>
-      </div>
 
-      <div class="row">
-      <h4>Average Home Value</h4>
-        <div class="span1" style="margin-left:0px">
-          <div><%= @city.name %></div>
-          $<%= number_with_delimiter(@city.people_facts.first.home_value, delimiter: ",")%>
-        </div>
-        <div class="span1">
-          <div class="vs">vs</div>
-        </div>
-        <div class="span1">
-          <div>National</div>
-          $<%= number_with_delimiter(NationalFact.first.home_value, delimiter: ",")%>
-        </div>
-      </div>
-
-      <div class="row">
-      <h4>Gettin' To Work</h4>
-        <div class="span2" style="margin-left:0px">
-          <ul class="unstyled">
-            <% @city.transportation_types.each do |type| %>
-              <li><%=type.description %></li>
-            <% end %>
+        <div class="row">
+          <div class="bottom">Median Home Value</div>
+            <div class="well clearfix">
+              <div class="span1 no_margin">
+                <div class="description-header"><%= @city.name %></div>
+                <p>$<%= number_with_delimiter(@city.people_facts.first.home_value, delimiter: ",")%></p>
+              </div>
+              <h4 class="versus">vs</h4>
+              <div class="span1">
+                <div class="description-header">National</div>
+                <p>$<%= number_with_delimiter(NationalFact.first.home_value, delimiter: ",")%></p>
+              </div>
+            </div>
           </div>
-        </ul>
+
+          <div class="row">
+          <div class="bottom">Main Mode of Transit</div>
+            <div class="well clearfix">
+              <div class="span1 no_margin">
+              <% @city.transportation_types.each do |type| %>
+                <p><%=type.description %></p>
+              <% end %>
+              </div>
+            </div>
+        </div>
       </div>
     </div>
   </div>

@@ -2,31 +2,73 @@
   <div class='page-header page-top-header'>Meet the family</div>
   <div class="row">
     <div class="span5">
-      <h3>Groups of People Who Live Here</h3>
-      <ul class="unstyled">
-        <% @city.people_types.each do |type| %>
-          <li><h4><%= type.name.titleize %></h4></li>
-          <li><%= type.description %></li>
-        <% end %>
-      </ul>
+      <div class="bottom">Groups of People Who Live Here</div>
+      <div class="well">
+        <ul class="unstyled">
+          <% @city.people_types.each do |type| %>
+          <div class="people-type">
+            <li><span class="description-header"><%= type.name.titleize %></span></li>
+            <li><%= type.description %></li>
+          </div>
+          <% end %>
+        </ul>
+      </div>
     </div>
 
     <div class="span5">
-      <div class="row">
-        <div class="span2 offset1">
-          <h4> Single Males </h4>
-          <% @city.people_facts.each do |fact| %>
-            <h5><%= @city.name %></h5>
-            <%= format_as_percentage(fact.single_males) %>
-          <% end %>
+      <div class="span5 offset1">
+        <div class="row">
+          <div class="bottom"> Single Males </div>
+            <div class="well clearfix">
+              <div class="span1 no_margin">
+              <% @city.people_facts.each do |fact| %>
+                <div class="description-header"><%= @city.name %></div>
+                <p><%= format_as_percentage(fact.single_males) %></p>
+              <% end %>
+              </div>
+              <h4 class="versus">vs</h4>
+              <div class="span1">
+                <div class="description-header">National</div>
+                <p><%= format_as_percentage(NationalFact.first.single_males) %></p>
+              </div>
+            </div>
         </div>
-        <div class="span2">
-          <h5>National</h5>
-          <%= format_as_percentage(NationalFact.first.single_males) %>
+
+        <div class="row">
+          <div class="bottom">Single Females</div>
+            <div class="well clearfix">
+              <div class="span1 no_margin">
+              <% @city.people_facts.each do |fact| %>
+                <div class="description-header"><%= @city.name %></div>
+                <p><%= format_as_percentage(fact.single_females) %></p>
+              <% end %>
+              </div>
+              <h4 class="versus">vs</h4>
+              <div class="span1">
+                <div class="description-header">National</div>
+                <p><%= format_as_percentage(NationalFact.first.single_females) %></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+          <div class="bottom">Median Age</div>
+            <div class="well clearfix">
+              <div class="span1 no_margin">
+              <% @city.people_facts.each do |fact| %>
+                <div class="description-header"><%= @city.name %></div>
+                <p><%= fact.median_age %></p>
+              <% end %>
+              </div>
+              <h4 class="versus">vs</h4>
+              <div class="span1">
+                <div class="description-header">National</div>
+                <p><%= NationalFact.first.median_age %></p>
+              </div>
+            </div>
         </div>
       </div>
     </div>
   </div>
-
 </div>
 

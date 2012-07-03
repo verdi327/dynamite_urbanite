@@ -17,22 +17,22 @@
       </div>
     <% else %>
       <div class="span12">
-        <ul class="unstyled">
+        <div class="unstyled">
         <% @city.daily_deals.each do |deal| %>
           <div class="span4 no_margin deal">
-            <li><%= link_to(image_tag(deal.image_url), deal.url) %></li>
             <div class="deal_caption">
-              <li><span class="deal_description"><%= deal.description.truncate(39) %></span></li>
-              <div class="price_and_button">
-                <li><span class="original_price"><%= to_dollars(deal.original_price) %></span>
-                <span class="deal_price"><%= to_dollars(deal.deal_price) %></span>
-                <%= link_to "View Deal", deal.url, class: "btn btn-success" %></li>
-              </div>
+            <div class="deal_image_container"><%= link_to(image_tag(deal.image_url.gsub('100_q60_', '300_q100')), deal.url) %></div>
+              <div class="deal_description"><%= deal.description %></div>
+              <span class="original_price"><%= to_dollars(deal.original_price) %></span>
+              <span class="deal_price"><%= to_dollars(deal.deal_price) %></span>
+              <div class="deal_button"><%= link_to "View Deal", deal.url, class: "btn btn-success" %></div>
             </div>
           </div>
         <% end %>
-        </ul>
+        </div>
       </div>
     <% end %>
   </div>
 </div>
+
+<!-- style='float:left; line-height:27px;' -->
