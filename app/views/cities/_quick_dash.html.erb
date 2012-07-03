@@ -5,7 +5,7 @@
       <div class="span1">
         <li id="weather_icon"><%= image_tag(as_photo(@weather.icon)) %></li>
       </div>
-      <div class="span1 no_margin" style="width:110px">
+      <div class="span1 no_margin" style="width:120px">
         <li>Temp: <%= @weather.temperature %> F</li>
         <li><%= @weather.humidity %></li>
         <li><%= @weather.condition %></li>
@@ -14,7 +14,7 @@
   </div>
 </div>
 
-<div class="well span2 quick_dash_container">
+<div class="well span2 quick_dash_container" style="width:190px">
   <div class="quick_dash_title">Walk Score</div>
   <ul class="unstyled">
     <div class="walkscore">
