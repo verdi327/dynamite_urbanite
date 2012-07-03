@@ -14,7 +14,7 @@
     <% end %>
   </div>
 
-  <div class="well span6 search_form result">
+  <div class="well span6 search_form result" style="display:none;">
     <% if @cities == nil %>
     <% elsif @cities.count == 0 %>
       So sorry, we were unable to find that city!
@@ -27,3 +27,10 @@
     <% end %>
   </div>
 </div>
+<script>
+  var results;
+  results = $(".result");
+  if (results.children().length > 0) {
+    results.show();
+  }
+</script>
