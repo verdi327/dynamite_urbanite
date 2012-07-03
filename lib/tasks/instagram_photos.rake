@@ -2,6 +2,10 @@ namespace :custom do
 
   desc "Pulls in top instagrams photos for a city"
   task :instagram_photos => :environment do
+    Instagram.configure do |config|
+      config.client_id     = INSTAGRAM_CLIENT_ID
+      config.client_secret = INSTAGRAM_CLIENT_SECRET
+    end
     City.all.each do |city|
       begin
         puts "looking up #{city.name}"

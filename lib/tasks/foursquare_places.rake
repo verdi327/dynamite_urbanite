@@ -2,7 +2,7 @@ namespace :custom do
   desc "Pulls in top 30 Foursquare venues for a city"
   task :foursquare_places => :environment do
     FoursquarePlace.destroy_all
-    @client = Foursquare2::Client.new(client_id: CLIENT_ID, client_secret: CLIENT_SECRET )
+    @client = Foursquare2::Client.new(client_id: FOURSQUARE_CLIENT_ID, client_secret: FOURSQUARECLIENT_SECRET )
     City.all.each do |city|
       begin
         puts "looking up #{city.name}"

@@ -2,6 +2,10 @@ namespace :custom do
 
   desc "Pulls in tweets for a city"
   task :twitter => :environment do
+    Twitter.configure do |config|
+      config.consumer_key = TWITTER_CONSUMER_KEY
+      config.consumer_secret = TWITTER_CONSUMER_SECRET
+    end
     City.all.each do |city|
       begin
         puts "looking up #{city.name}"

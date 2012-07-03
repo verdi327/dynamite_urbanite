@@ -6,7 +6,7 @@ namespace :custom do
     city = City.first
     begin
       puts "looking up #{city.name}"
-      facts = ZillowApi::National.find_by_city({city: city.name, state: city.state}, ZWSID2)
+      facts = ZillowApi::National.find_by_city({city: city.name, state: city.state}, ZWSID1)
         NationalFact.create(single_males:         facts.single_males,
                             single_females:       facts.single_females,
                             median_age:           facts.median_age,
