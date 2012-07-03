@@ -1,20 +1,20 @@
-<div class="well span2 ">
+<div class="well span2 quick_dash_container">
   <div class="quick_dash_title">Current Weather</div>
   <div class="row">
     <ul class="unstyled">
       <div class="span1">
         <li id="weather_icon"><%= image_tag(as_photo(@weather.icon)) %></li>
       </div>
-      <div class="span1 no_margin style=margin-right:0px">
-        <li>Temp: <%= @weather.temperature %></li>
+      <div class="span1 no_margin" style="width:100px">
+        <li>Temp: <%= @weather.temperature %> F</li>
         <li><%= @weather.humidity %></li>
+        <li><%= @weather.condition %></li>
       </div>
     </ul>
   </div>
 </div>
-<div class="span2 bottom_caption"><%= @weather.condition %></div>
 
-<div class="well span2">
+<div class="well span2 quick_dash_container">
   <div class="quick_dash_title">Walk Score</div>
   <ul class="unstyled">
     <div class="walkscore">
@@ -22,8 +22,5 @@
     </div>
   </ul>
   <div class="bottom_caption"><%= @city.walk_score.description %></div>
-</div>
-<div class="span2">
-  <%= button_to "New Search", root_path, class: "btn btn-success" %>
 </div>
 <div class="clearfix"></div>

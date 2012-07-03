@@ -10,6 +10,8 @@
 </style>
 
 <div class="row">
+  <div class="pull-right"><%= button_to "New Search", root_path, class: "btn btn-large btn-inverse" %></div>
+  <div class="clearfix"></div>
   <div class="well span6">
     <div class="page-header title_text"><%= @city.full_name %></div>
     <div class="bottom"><%= @city.tagline %></div>

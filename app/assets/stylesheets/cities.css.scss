@@ -108,6 +108,7 @@ h4.versus { float: left; line-height: 45px; margin-left:40px; }
 
 .bottom_caption{
   border:1px solid black;
+  font-size:20px;
 }
 
 /*Home Page*/
@@ -155,6 +156,10 @@ li#list_results{
   padding:8px;
   margin:5px;
   font-size:18px;
+}
+
+.quick_dash_container{
+  width:213px;
 }
 
 /*ul.unstyled#list_results li:nth-child(odd){
