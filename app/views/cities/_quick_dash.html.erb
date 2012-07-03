@@ -18,9 +18,9 @@
   <div class="quick_dash_title">Walk Score</div>
   <ul class="unstyled">
     <div class="walkscore">
-      <li><%= @city.walk_score.score %></li>
+      <li style="padding-bottom:8px"><%= @city.walk_score.score %></li>
     </div>
   </ul>
-  <div class="bottom_caption"><%= @city.walk_score.description %></div>
+  <div class="bottom_caption"><span class="label label-info" style="font-size:19px"><%= @city.walk_score.description %></span></div>
 </div>
 <div class="clearfix"></div>
