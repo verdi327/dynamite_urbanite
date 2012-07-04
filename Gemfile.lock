@@ -114,7 +114,7 @@ GEM
     multi_json (1.0.4)
     multipart-post (1.1.5)
     nokogiri (1.5.5)
-    pg (0.13.2)
+    pg (0.14.0)
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.2)
@@ -202,7 +202,7 @@ DEPENDENCIES
   rails (= 3.2.5)
   sass-rails (~> 3.2.3)
   sqlite3
-  tire
+  tire (~> 0.4.1)
   twitter
   twitter-bootstrap-rails
   uglifier (>= 1.0.3)

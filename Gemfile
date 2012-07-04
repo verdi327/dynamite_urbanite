@@ -5,7 +5,7 @@ gem 'rails', '3.2.5'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'tire'
+gem 'tire', '~>0.4.1'
 gem 'current_weather', github: 'verdi327/current_weather_gem'
 gem 'zillow_demographics'
 gem 'foursquare2'

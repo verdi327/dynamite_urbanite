@@ -19,4 +19,5 @@
 /config/initializers/instagram.rb
 /config/initializers/twitter.rb
 /config/initializers/zillow.rb
+/config/initializers/bonsai.rb
 
