@@ -8,7 +8,7 @@
           <% @city.top_industries.each_with_index do |category, index| %>
           <div class="people-type">
             <% updated = index + 1 %>
-            <li><%= "#{updated}: #{category.name}" %></li>
+            <li id="most_common_industries"><%= "#{updated}: #{category.name}" %></li>
           </div>
           <% end %>
         </ul>
