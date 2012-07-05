@@ -4,7 +4,7 @@ class CitiesController < ApplicationController
     # @cities = City.search(params) if params[:query]
     # @cities ||= nil
     if params[:query]
-      @cities = City.where("upper(name) LIKE ? OR upper(state) LIKE ?", "%#{params[:query]}%", "%#{params[:query]}%")
+      @cities = City.where("name ILIKE ? OR state ILIKE ?", "%#{params[:query]}%", "%#{params[:query]}%")
     end
   end
 
