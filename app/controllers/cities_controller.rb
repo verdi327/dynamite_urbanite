@@ -1,7 +1,9 @@
 class CitiesController < ApplicationController
   def index
-    @cities = City.search(params) if params[:query]
-    @cities ||= nil
+    #for elastic search
+    # @cities = City.search(params) if params[:query]
+    # @cities ||= nil
+    @cities = City.where("name OR state LIKE ?", params[:query])
   end
 
   def show
