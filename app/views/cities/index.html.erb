@@ -21,8 +21,8 @@
 
   <div class="well span6 search_form result" style="display:none;">
     <% if @cities == nil %>
-    <% elsif @cities.count == 0 %>
-      So sorry, we were unable to find that city!
+    <% elsif @cities.empty? %>
+      <div class="title-text">So sorry, we were unable to find that city!</div>
     <% else %>
         <ul class="unstyled">
         <% @cities.each do |city| %>
