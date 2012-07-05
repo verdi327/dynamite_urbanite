@@ -10,7 +10,7 @@ namespace :custom do
       radius = 0.25
       args = {}
       args[:bbox] = "#{city.longitude - radius},#{city.latitude - radius},#{city.longitude + radius},#{city.latitude + radius}"
-      args[:min_taken_date] = '2005-01-01 00:00:00'
+      args[:min_taken_date] = '2011-01-01 00:00:00'
       args[:max_taken_date] = '2012-01-01 00:00:00'
       args[:accuracy] = 1
       puts 'set flickr variables successfully'
@@ -27,7 +27,7 @@ namespace :custom do
                                   city_id:    city.id )
         end
       end
-      sleep 5
+      sleep 2
       puts "successfully created flickr photo for #{city.name}"
     end
   end

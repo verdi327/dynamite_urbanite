@@ -10,27 +10,8 @@
 
 </style>
 <div class="row">
-  <div class="well span6 search_form">
-    <div class="splash_header">Dynamite Urbanite</div>
-    <div class="splash_subtitle">Discover the pulse of any US city</div>
-    <%= form_tag cities_path, method: :get, class: "search_form_input" do %>
-      <%= text_field_tag :query, params[:query], placeholder: "ex. Spokane, Washington" %>
-      <%= submit_tag "Search", name: nil, class: "btn btn-large btn-success" %>
-    <% end %>
-  </div>
-
-  <div class="well span6 search_form result" style="display:none;">
-    <% if @cities == nil %>
-    <% elsif @cities.empty? %>
-      <div class="title-text">So sorry, we were unable to find that city!</div>
-    <% else %>
-        <ul class="unstyled">
-        <% @cities.each do |city| %>
-            <li class="well" id="list_results"><%= link_to(city.full_name, city) %></li>
-        <% end %>
-      </ul>
-    <% end %>
-  </div>
+  <%= render "search_form" %>
+  <%= render "search_results" %>
 </div>
 <script>
   var results;

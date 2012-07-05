@@ -3,6 +3,7 @@ class CitiesController < ApplicationController
     #for elastic search
     # @cities = City.search(params) if params[:query]
     # @cities ||= nil
+    #Using ILIKE locally will break(for pg), remove I to play nice with Sqlite
     if params[:query]
       @cities = City.where("name ILIKE ? OR state ILIKE ?", "%#{params[:query]}%", "%#{params[:query]}%")
     end
