@@ -6,7 +6,7 @@ namespace :custom do
       config.consumer_key = TWITTER_CONSUMER_KEY
       config.consumer_secret = TWITTER_CONSUMER_SECRET
     end
-    Twitter.destroy_all
+    TwitterPost.destroy_all
     City.all.each do |city|
       begin
         puts "looking up #{city.name}"
