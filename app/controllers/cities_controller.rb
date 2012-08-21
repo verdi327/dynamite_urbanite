@@ -1,6 +1,5 @@
 class CitiesController < ApplicationController
 #test comment
-#pimp nugget
   def index
     #for elastic search
     # @cities = City.search(params) if params[:query]
