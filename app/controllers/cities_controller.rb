@@ -1,5 +1,6 @@
 class CitiesController < ApplicationController
 #test comment
+#hey girl
   def index
     #for elastic search
     # @cities = City.search(params) if params[:query]
